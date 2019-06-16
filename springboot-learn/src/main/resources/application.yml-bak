@@ -1,0 +1,5 @@
+server:
+  port: 9090
+hello:
+  number: ${random.int}
+  msg: yo,yo,yo ${hello.number}

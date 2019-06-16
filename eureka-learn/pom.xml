@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>springcloud-in-action</artifactId>
+        <groupId>com.example</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.zhang</groupId>
+    <artifactId>eureka-learn</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>eureka-server-single</module>
+        <module>eureka-server-ha</module>
+        <module>service-consumer</module>
+        <module>service-provider</module>
+        <module>eureka-server-consumer-remove-eureka</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <name>eureka-learn</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
